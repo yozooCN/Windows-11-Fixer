@@ -1,4 +1,4 @@
-﻿<Window x:Class="Windows_11_Fixer.Restart_Popup"
+<Window x:Class="Windows_11_Fixer.Restart_Popup"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -49,7 +49,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Restart Popup"
+                    <TextBlock Text="重启-提示框"
                            Foreground="{DynamicResource TextColor1}"
                            Grid.Column="0"
                            Grid.ColumnSpan="3"
@@ -101,7 +101,7 @@
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
                             Margin="0,40,0,0">
-                    <TextBlock Text="Some of the changes made require your computer to restart in order for them to take affect!"
+                    <TextBlock Text="有些更改需要重新启动计算机才能生效!"
                            Foreground="{DynamicResource TextColor1}"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
@@ -118,7 +118,7 @@
             <StackPanel Grid.Row="2">
                 <StackPanel Orientation="Horizontal">
 
-                    <Button Content="Restart Now"
+                    <Button Content="现在重启"
                         Foreground="{DynamicResource TextColor1}"
                         FontWeight="Medium"
                         FontSize="16"
@@ -153,7 +153,7 @@
 
                     </Button>
 
-                    <Button Content="Restart Later"
+                    <Button Content="稍后重启"
                         Foreground="{DynamicResource TextColor1}"
                         FontWeight="Medium"
                         FontSize="16"
