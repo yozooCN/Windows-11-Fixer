@@ -1,16 +1,16 @@
-﻿<UserControl x:Class="Windows_11_Fixer.MVVM.View.SettingsView"
+<UserControl x:Class="Windows_11_Fixer.MVVM.View.SettingsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Windows_11_Fixer.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="700" d:DesignWidth="1190">
+             d:DesignHeight="600" d:DesignWidth="1000">
     <StackPanel Orientation="Vertical">
         <ScrollViewer HorizontalScrollBarVisibility="Disabled"
-                      Height="655"
-                      Width="1190"
-                      Style="{DynamicResource Scroll}">
+                      Height="560"
+                      Width="1000"
+                      Style="{DynamicResource Scroll}" Margin="-25,0,0,0">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -30,13 +30,13 @@
                                         Background="{DynamicResource Button}">
                                     <StackPanel HorizontalAlignment="Left"
                                                 VerticalAlignment="Top"
-                                                Height="30" Width="381.67">
-                                        <TextBlock Text="System Settings"
+                                                Height="30" Width="320">
+                                        <TextBlock Text="系统设置"
                                                    HorizontalAlignment="Center"
                                                    VerticalAlignment="Top"
                                                    Margin="5,4,0,0"
                                                    Foreground="{DynamicResource TextColor1}"
-                                                   FontFamily="Fonts/#Sans"
+                                                   FontFamily="Microsoft YaHei UI"
                                                    FontWeight="Bold"
                                                    FontSize="20"/>
                                     </StackPanel>
@@ -45,7 +45,7 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.67" Height="190"
+                            <Border Width="360" Height="190"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -58,110 +58,110 @@
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
                                                     Height="30" Width="381.67">
-                                            <TextBlock Text="Notifications"
+                                            <TextBlock Text="通知"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Notifications"
+                                    <TextBlock Text="通知"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Notifications_NC"
                                                      GroupName="Notifications"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Notifications_Disable"
                                                      GroupName="Notifications"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Notifications_Enable"
                                                      GroupName="Notifications"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Offer Suggestions on Device Setup"
+                                    <TextBlock Text="提供设备安装建议"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Suggestions_NC"
                                                      GroupName="Suggestions"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Suggestions_Disable"
                                                      GroupName="Suggestions"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Suggestions_Enable"
                                                      GroupName="Suggestions"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Get Windows Tips and Suggestions"
+                                    <TextBlock Text="获取Windows提示和建议"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Tips_NC"
                                                      GroupName="Tips"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Tips_Disable"
                                                      GroupName="Tips"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Tips_Enable"
                                                      GroupName="Tips"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
                                     
@@ -170,7 +170,7 @@
                             </Border>
 
 
-                            <Border Width="381.67" Height="85"
+                            <Border Width="360" Height="85"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -183,53 +183,53 @@
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
                                                     Height="30" Width="381.67">
-                                            <TextBlock Text="Storage"
+                                            <TextBlock Text="存储"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Storage Sense"
+                                    <TextBlock Text="存储感知"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="StorageSense_NC"
                                                      GroupName="StorageSense"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="StorageSense_Disable"
                                                      GroupName="StorageSense"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="StorageSense_Enable"
                                                      GroupName="StorageSense"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
                                 </StackPanel>
                             </Border>
 
 
-                            <Border Width="381.67" Height="85"
+                            <Border Width="360" Height="85"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -242,46 +242,46 @@
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
                                                     Height="30" Width="381.67">
-                                            <TextBlock Text="Clipboard"
+                                            <TextBlock Text="剪贴板"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Clipboard History"
+                                    <TextBlock Text="剪贴板历史记录"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Clipboard_NC"
                                                      GroupName="Clipboard"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Clipboard_Enable"
                                                      GroupName="Clipboard"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Clipboard_Disable"
                                                      GroupName="Clipboard"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
                                 </StackPanel>
@@ -295,13 +295,13 @@
                                         Margin="0,15,0,0">
                                     <StackPanel HorizontalAlignment="Left"
                                                 VerticalAlignment="Top"
-                                                Height="30" Width="381.67">
-                                        <TextBlock Text="Personalization Settings"
+                                                Height="30" Width="320">
+                                        <TextBlock Text="个性化设置"
                                                    HorizontalAlignment="Center"
                                                    VerticalAlignment="Top"
                                                    Margin="5,4,0,0"
                                                    Foreground="{DynamicResource TextColor1}"
-                                                   FontFamily="Fonts/#Sans"
+                                                   FontFamily="Microsoft YaHei UI"
                                                    FontWeight="Bold"
                                                    FontSize="20"/>
                                     </StackPanel>
@@ -310,7 +310,7 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.67" Height="190"
+                            <Border Width="360" Height="190"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -322,116 +322,116 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.67">
-                                            <TextBlock Text="Colors"
+                                                    Height="30" Width="320">
+                                            <TextBlock Text="颜色"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Windows Theme"
+                                    <TextBlock Text="Windows 主题"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="WinTheme_NC"
                                                      GroupName="WinTheme"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Dark"
+                                        <RadioButton Content="暗色"
                                                      Name="WinTheme_Dark"
                                                      GroupName="WinTheme"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Light"
+                                        <RadioButton Content="亮色"
                                                      Name="WinTheme_Light"
                                                      GroupName="WinTheme"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Application Theme"
+                                    <TextBlock Text="应用程序主题"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="AppTheme_NC"
                                                      GroupName="AppTheme"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Dark"
+                                        <RadioButton Content="暗色"
                                                      Name="AppTheme_Dark"
                                                      GroupName="AppTheme"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Light"
+                                        <RadioButton Content="亮色"
                                                      Name="AppTheme_Light"
                                                      GroupName="AppTheme"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Transparency Effects"
+                                    <TextBlock Text="透明效果"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Transparency_NC"
                                                      GroupName="Transparency"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Transparency_Disable"
                                                      GroupName="Transparency"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Transparency_Enable"
                                                      GroupName="Transparency"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
                                 </StackPanel>
                             </Border>
-                            <Border Width="381.67" Height="85"
+                            <Border Width="360" Height="85"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -443,48 +443,48 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.67">
-                                            <TextBlock Text="Start"
+                                                    Height="30" Width="320">
+                                            <TextBlock Text="开始菜单"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
                                     
-                                    <TextBlock Text="Show Recently Opened Items"
+                                    <TextBlock Text="显示最近打开的项目"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="RecentlyOpened_NC"
                                                      GroupName="RecentlyOpened"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="RecentlyOpened_Disable"
                                                      GroupName="RecentlyOpened"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="RecentlyOpened_Enable"
                                                      GroupName="RecentlyOpened"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
                                 </StackPanel>
@@ -498,13 +498,13 @@
                                         Margin="0,15,0,0">
                                     <StackPanel HorizontalAlignment="Left"
                                                 VerticalAlignment="Top"
-                                                Height="30" Width="381.67">
-                                        <TextBlock Text="Other Settings"
+                                                Height="30" Width="330">
+                                        <TextBlock Text="其他设置"
                                                    HorizontalAlignment="Center"
                                                    VerticalAlignment="Top"
                                                    Margin="5,4,0,0"
                                                    Foreground="{DynamicResource TextColor1}"
-                                                   FontFamily="Fonts/#Sans"
+                                                   FontFamily="Microsoft YaHei UI"
                                                    FontWeight="Bold"
                                                    FontSize="20"/>
                                     </StackPanel>
@@ -513,7 +513,7 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.67" Height="290"
+                            <Border Width="360" Height="330"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -525,47 +525,47 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.67">
-                                            <TextBlock Text="Gaming"
+                                                    Height="30" Width="320">
+                                            <TextBlock Text="游戏"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Game Mode"
+                                    <TextBlock Text="游戏模式"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="GameMode_NC"
                                                      GroupName="GameMode"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="GameMode_Disable"
                                                      GroupName="GameMode"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="GameMode_Enable"
                                                      GroupName="GameMode"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
                                     
@@ -584,13 +584,13 @@
                                     <StackPanel
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
-                                    Height="30" Width="778.33">
-                                        <TextBlock Text="Privacy and Security Settings"
+                                    Height="30" Width="647">
+                                        <TextBlock Text="隐私和安全设置"
                                         HorizontalAlignment="Center"
                                         VerticalAlignment="Top"
                                         Margin="5,4,0,0"
                                         Foreground="{DynamicResource TextColor1}"
-                                        FontFamily="Fonts/#Sans"
+                                        FontFamily="Microsoft YaHei UI"
                                         FontWeight="Bold"
                                         FontSize="20"/>
                                     </StackPanel>
@@ -598,7 +598,7 @@
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Border Width="778.33" Height="102.5"
+                            <Border Width="647" Height="102.5"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -607,13 +607,13 @@
                                 <StackPanel>
                                     <StackPanel Orientation="Vertical">
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="Select Recommended Privacy and Security Settings"
+                                            <TextBlock Text="选择推荐的隐私和安全设置"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="15,12,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
-                                                       FontWeight="Medium"
+                                                       FontFamily="Microsoft YaHei UI"
+                                                       FontWeight="Bold"
                                                        FontSize="16"/>
                                             <CheckBox Name="SelectRecPriv"
                                                       Margin="10,12,0,0"
@@ -622,13 +622,13 @@
                                                       Click="SelectRecPriv_Click"/>
                                         </StackPanel>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="Select Recommended App Permissions Settings"
+                                            <TextBlock Text="选择推荐的应用程序权限设置"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="15,12,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
-                                                       FontWeight="Medium"
+                                                       FontFamily="Microsoft YaHei UI"
+                                                       FontWeight="Bold"
                                                        FontSize="16"/>
                                             <CheckBox Name="SelectRecAppPerm"
                                                       Margin="10,12,0,0"
@@ -637,13 +637,13 @@
                                                       Click="SelectRecAppPerm_Click"/>
                                         </StackPanel>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="Deselect All Privacy and Security Settings and App Permissions Settings"
+                                            <TextBlock Text="取消选择所有隐私和安全设置和应用程序权限设置"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="15,12,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
-                                                       FontWeight="Medium"
+                                                       FontFamily="Microsoft YaHei UI"
+                                                       FontWeight="Bold"
                                                        FontSize="16"/>
                                             <CheckBox Name="DeselectAll"
                                                       Margin="10,12,0,0"
@@ -667,13 +667,13 @@
                                         Margin="0,165,0,0">
                                     <StackPanel HorizontalAlignment="Left"
                                                 VerticalAlignment="Top"
-                                                Height="30" Width="381.67">
-                                        <TextBlock Text="Privacy and Security"
+                                                Height="30" Width="316">
+                                        <TextBlock Text="隐私和安全"
                                                    HorizontalAlignment="Center"
                                                    VerticalAlignment="Top"
                                                    Margin="5,4,0,0"
                                                    Foreground="{DynamicResource TextColor1}"
-                                                   FontFamily="Fonts/#Sans"
+                                                   FontFamily="Microsoft YaHei UI"
                                                    FontWeight="Bold"
                                                    FontSize="20"/>
                                     </StackPanel>
@@ -681,7 +681,7 @@
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.66" Height="242.5"
+                            <Border Width="316" Height="242.5"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -693,143 +693,143 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.66">
-                                            <TextBlock Text="General"
+                                                    Height="30" Width="310">
+                                            <TextBlock Text="通用"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Let Apps Show Personalized Ads"
+                                    <TextBlock Text="APP显示个性化广告"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="PersonalizedAds_NC"
                                                      GroupName="PersonalizedAds"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="PersonalizedAds_Disable"
                                                      GroupName="PersonalizedAds"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="PersonalizedAds_Enable"
                                                      GroupName="PersonalizedAds"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Allow Websites Access to Language List"
+                                    <TextBlock Text="允许网站访问语言列表"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="关闭"
                                                      Name="LanguageList_NC"
                                                      GroupName="LanguageList"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="开启"
                                                      Name="LanguageList_Disable"
                                                      GroupName="LanguageList"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Improve Search by Tracking App Launches"
+                                    <TextBlock Text="通过跟踪应用启动来改善搜索"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="ImproveSearch_NC"
                                                      GroupName="ImproveSearch"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="ImproveSearch_Disable"
                                                      GroupName="ImproveSearch"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="ImproveSearch_Enable"
                                                      GroupName="ImproveSearch"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Show Suggested Content in Settings App"
+                                    <TextBlock Text="在设置应用程序中显示建议内容"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="ShowSuggested_NC"
                                                      GroupName="ShowSuggested"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="ShowSuggested_Disable"
                                                      GroupName="ShowSuggested"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="ShowSuggested_Enable"
                                                      GroupName="ShowSuggested"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
@@ -837,7 +837,7 @@
                             </Border>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.66" Height="85"
+                            <Border Width="316" Height="85"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -849,48 +849,48 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.66">
-                                            <TextBlock Text="Speech"
+                                                    Height="30" Width="316">
+                                            <TextBlock Text="朗读"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Online Speech Recognition"
+                                    <TextBlock Text="在线语音识别"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="SpeechRecognition_NC"
                                                      GroupName="SpeechRecognition"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="SpeechRecognition_Disable"
                                                      GroupName="SpeechRecognition"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="SpeechRecognition_Enable"
                                                      GroupName="SpeechRecognition"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
@@ -898,7 +898,7 @@
                             </Border>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.66" Height="85"
+                            <Border Width="316" Height="85"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -910,48 +910,48 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.66">
-                                            <TextBlock Text="Inking and Typing"
+                                                    Height="30" Width="316">
+                                            <TextBlock Text="墨迹书写和键入"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Personal Inking and Typing Dictionary"
+                                    <TextBlock Text="个人墨迹书写和键入词典"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Dictionary_NC"
                                                      GroupName="Dictionary"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Dictionary_Disable"
                                                      GroupName="Dictionary"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Dictionary_Enable"
                                                      GroupName="Dictionary"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
@@ -959,7 +959,7 @@
                             </Border>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.66" Height="250"
+                            <Border Width="316" Height="250"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -971,137 +971,137 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.66">
-                                            <TextBlock Text="Diagnostics and Feedback"
+                                                    Height="30" Width="316">
+                                            <TextBlock Text="诊断和反馈"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Send Optional Diagnostic Data"
+                                    <TextBlock Text="发送可选诊断数据"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="OptionalData_NC"
                                                      GroupName="OptionalData"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="OptionalData_Disable"
                                                      GroupName="OptionalData"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="OptionalData_Enable"
                                                      GroupName="OptionalData"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Send Inking and Typing Data"
+                                    <TextBlock Text="改进墨迹书写和键入数据"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="TypingData_NC"
                                                      GroupName="TypingData"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="TypingData_Disable"
                                                      GroupName="TypingData"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="TypingData_Enable"
                                                      GroupName="TypingData"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Tailored Experience"
+                                    <TextBlock Text="量身定制的体验"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="Tailored_NC"
                                                      GroupName="Tailored"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="Tailored_Disable"
                                                      GroupName="Tailored"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="Tailored_Enable"
                                                      GroupName="Tailored"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Feedback Frequency"
+                                    <TextBlock Text="反馈频率"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
                                         <ComboBox Width="250"
                                                   Margin="15,5,0,0"
                                                   Foreground="Black">
-                                            <ComboBoxItem IsSelected="True" Name="Feedback_NC" Selected="UN_Priv_Click">No Change</ComboBoxItem>
-                                            <ComboBoxItem Name="Feedback_Auto" Selected="UN_Priv_Click">Automatically</ComboBoxItem>
-                                            <ComboBoxItem Name="Feedback_Always" Selected="UN_Priv_Click">Always</ComboBoxItem>
-                                            <ComboBoxItem Name="Feedback_Daily" Selected="UN_Priv_Click">Once a Day</ComboBoxItem>
-                                            <ComboBoxItem Name="Feedback_Weekly" Selected="UN_Priv_Click">Once a Week</ComboBoxItem>
-                                            <ComboBoxItem Name="Feedback_Never">Never</ComboBoxItem>
+                                            <ComboBoxItem IsSelected="True" Name="Feedback_NC" Selected="UN_Priv_Click">不更改</ComboBoxItem>
+                                            <ComboBoxItem Name="Feedback_Auto" Selected="UN_Priv_Click">自动</ComboBoxItem>
+                                            <ComboBoxItem Name="Feedback_Always" Selected="UN_Priv_Click">始终</ComboBoxItem>
+                                            <ComboBoxItem Name="Feedback_Daily" Selected="UN_Priv_Click">每天一次</ComboBoxItem>
+                                            <ComboBoxItem Name="Feedback_Weekly" Selected="UN_Priv_Click">每周一次</ComboBoxItem>
+                                            <ComboBoxItem Name="Feedback_Never">从不</ComboBoxItem>
                                         </ComboBox>
                                     </StackPanel>
                                 </StackPanel>
@@ -1109,7 +1109,7 @@
                         </StackPanel>
                         
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.66" Height="202.5"
+                            <Border Width="316" Height="242.5"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -1121,90 +1121,90 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.66">
-                                            <TextBlock Text="Search Permissions"
+                                                    Height="30" Width="316">
+                                            <TextBlock Text="搜索权限"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Safe Search"
+                                    <TextBlock Text="安全搜索"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="SafeSearch_NC"
                                                      GroupName="SafeSearch"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Strict"
+                                        <RadioButton Content="严格"
                                                      Name="SafeSearch_Strict"
                                                      GroupName="SafeSearch"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Moderate"
+                                        <RadioButton Content="适中"
                                                      Name="SafeSearch_Moderate"
                                                      GroupName="SafeSearch"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Off"
+                                        <RadioButton Content="关闭"
                                                      Name="SafeSearch_Off"
                                                      GroupName="SafeSearch"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Store Search History"
+                                    <TextBlock Text="存储搜索历史"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="SearchHistory_NC"
                                                      GroupName="SearchHistory"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="SearchHistory_Disable"
                                                      GroupName="SearchHistory"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="SearchHistory_Enable"
                                                      GroupName="SearchHistory"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_Priv_Click"/>
                                     </StackPanel>
@@ -1218,7 +1218,7 @@
                 <StackPanel Grid.Column="4" Orientation="Vertical">
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Vertical">
-                            <Border Width="381.66" Height="970"
+                            <Border Width="316" Height="1010"
                                     Background="{DynamicResource Color2}"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"
@@ -1230,197 +1230,197 @@
                                         <StackPanel Orientation="Horizontal"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top"
-                                                    Height="30" Width="381.66">
-                                            <TextBlock Text="App Permissions"
+                                                    Height="30" Width="316">
+                                            <TextBlock Text="APP 权限"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
                                                        Margin="5,4,0,0"
                                                        Foreground="{DynamicResource TextColor1}"
-                                                       FontFamily="Fonts/#Sans"
+                                                       FontFamily="Microsoft YaHei UI"
                                                        FontWeight="Bold"
                                                        FontSize="20"/>
                                         </StackPanel>
                                     </Border>
-                                    <TextBlock Text="Location Services"
+                                    <TextBlock Text="位置服务"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,7,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                      Name="AP_Location_NC"
                                                      GroupName="AP_Location"
                                                      IsChecked="True"
                                                      Margin="15,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                      Name="AP_Location_Disable"
                                                      GroupName="AP_Location"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                      Name="AP_Location_Enable"
                                                      GroupName="AP_Location"
                                                      Margin="25,5,0,0"
                                                      Foreground="{DynamicResource TextColor1}"
-                                                     FontFamily="Fonts/#Sans"
+                                                     FontFamily="Microsoft YaHei UI"
                                                      FontSize="14"
                                                      Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Camera Access"
+                                    <TextBlock Text="相机权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Camera_NC"
                                                     GroupName="AP_Camera"
                                                     IsChecked="True"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Camera_Disable"
                                                     GroupName="AP_Camera"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Camera_Enable"
                                                     GroupName="AP_Camera"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Microphone Access"
+                                    <TextBlock Text="麦克风权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Microphone_NC"
                                                     GroupName="AP_Microphone"
                                                     IsChecked="True"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Microphone_Disable"
                                                     GroupName="AP_Microphone"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Microphone_Enable"
                                                     GroupName="AP_Microphone"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Voice Activation"
+                                    <TextBlock Text="语音激活"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_VActivation_NC"
                                                     GroupName="AP_VActivation"
                                                     IsChecked="True"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_VActivation_Disable"
                                                     GroupName="AP_VActivation"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_VActivation_Enable"
                                                     GroupName="AP_VActivation"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Notifications Access"
+                                    <TextBlock Text="通知权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Notifications_NC"
                                                     GroupName="AP_Notifications"
                                                     IsChecked="True"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Notifications_Disable"
                                                     GroupName="AP_Notifications"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Notifications_Enable"
                                                     GroupName="AP_Notifications"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Account Information Access"
+                                    <TextBlock Text="账户信息权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_AInfo_NC"
                                                     GroupName="AP_AInfo"
                                                     IsChecked="True"
@@ -1428,35 +1428,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_AInfo_Disable"
                                                     GroupName="AP_AInfo"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_AInfo_Enable"
                                                     GroupName="AP_AInfo"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Contacts Access"
+                                    <TextBlock Text="联系人权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Contacts_NC"
                                                     GroupName="AP_Contacts"
                                                     IsChecked="True"
@@ -1464,35 +1464,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Contacts_Disable"
                                                     GroupName="AP_Contacts"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Contacts_Enable"
                                                     GroupName="AP_Contacts"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Calendar Access"
+                                    <TextBlock Text="日历权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Calendar_NC"
                                                     GroupName="AP_Calendar"
                                                     IsChecked="True"
@@ -1500,35 +1500,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Calendar_Disable"
                                                     GroupName="AP_Calendar"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Calendar_Enable"
                                                     GroupName="AP_Calendar"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Phone Call Access"
+                                    <TextBlock Text="电话呼叫权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_PCall_NC"
                                                     GroupName="AP_PCall"
                                                     IsChecked="True"
@@ -1536,35 +1536,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_PCall_Disable"
                                                     GroupName="AP_PCall"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_PCall_Enable"
                                                     GroupName="AP_PCall"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Call History Access"
+                                    <TextBlock Text="通话记录权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_CHistory_NC"
                                                     GroupName="AP_CHistory"
                                                     IsChecked="True"
@@ -1572,35 +1572,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_CHistory_Disable"
                                                     GroupName="AP_CHistory"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_CHistory_Enable"
                                                     GroupName="AP_CHistory"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Email Access"
+                                    <TextBlock Text="电子邮件权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Email_NC"
                                                     GroupName="AP_Email"
                                                     IsChecked="True"
@@ -1608,35 +1608,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Email_Disable"
                                                     GroupName="AP_Email"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Email_Enable"
                                                     GroupName="AP_Email"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Tasks Access"
+                                    <TextBlock Text="任务权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Tasks_NC"
                                                     GroupName="AP_Tasks"
                                                     IsChecked="True"
@@ -1644,35 +1644,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Tasks_Disable"
                                                     GroupName="AP_Tasks"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Tasks_Enable"
                                                     GroupName="AP_Tasks"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Messaging Access"
+                                    <TextBlock Text="短信权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改e"
                                                     Name="AP_Messaging_NC"
                                                     GroupName="AP_Messaging"
                                                     IsChecked="True"
@@ -1680,35 +1680,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Messaging_Disable"
                                                     GroupName="AP_Messaging"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Messaging_Enable"
                                                     GroupName="AP_Messaging"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Radio Control Access"
+                                    <TextBlock Text="无线收发器权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Radio_NC"
                                                     GroupName="AP_Radio"
                                                     IsChecked="True"
@@ -1716,35 +1716,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Radio_Disable"
                                                     GroupName="AP_Radio"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Radio_Enable"
                                                     GroupName="AP_Radio"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Communicate with Unpaired Devices"
+                                    <TextBlock Text="与未配对的设备通信"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Communicate_NC"
                                                     GroupName="AP_Communicate"
                                                     IsChecked="True"
@@ -1752,35 +1752,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Communicate_Disable"
                                                     GroupName="AP_Communicate"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Communicate_Enable"
                                                     GroupName="AP_Communicate"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="App Diagnostic Access"
+                                    <TextBlock Text="应用程序诊断访问"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Diagnostic_NC"
                                                     GroupName="AP_Diagnostic"
                                                     IsChecked="True"
@@ -1788,35 +1788,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Diagnostic_Disable"
                                                     GroupName="AP_Diagnostic"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Diagnostic_Enable"
                                                     GroupName="AP_Diagnostic"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
                                     </StackPanel>
-                                    <TextBlock Text="Documents Access"
+                                    <TextBlock Text="文件系统权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Documents_NC"
                                                     GroupName="AP_Documents"
                                                     IsChecked="True"
@@ -1824,35 +1824,35 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Documents_Disable"
                                                     GroupName="AP_Documents"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Documents_Enable"
                                                     GroupName="AP_Documents"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
                                     </StackPanel>
-                                    <TextBlock Text="Downloads Folder Access"
+                                    <TextBlock Text="下载文件夹权限"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="15,12,0,0"
                                                Foreground="{DynamicResource TextColor1}"
-                                               FontFamily="Fonts/#Sans"
-                                               FontWeight="Medium"
+                                               FontFamily="Microsoft YaHei UI"
+                                               FontWeight="Bold"
                                                FontSize="16"/>
                                     <StackPanel Orientation="Horizontal">
-                                        <RadioButton Content="No Change"
+                                        <RadioButton Content="不更改"
                                                     Name="AP_Downloads_NC"
                                                     GroupName="AP_Downloads"
                                                     IsChecked="True"
@@ -1860,23 +1860,23 @@
                                                     VerticalAlignment="Top"
                                                     Margin="15,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Disable"
+                                        <RadioButton Content="关闭"
                                                     Name="AP_Downloads_Disable"
                                                     GroupName="AP_Downloads"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"
                                                     Click="UN_AppPerm_Click"/>
-                                        <RadioButton Content="Enable"
+                                        <RadioButton Content="开启"
                                                     Name="AP_Downloads_Enable"
                                                     GroupName="AP_Downloads"
                                                     Margin="25,5,0,0"
                                                     Foreground="{DynamicResource TextColor1}"
-                                                    FontFamily="Fonts/#Sans"
+                                                    FontFamily="Microsoft YaHei UI"
                                                     FontSize="14"/>
                                     </StackPanel>
                                     
@@ -1889,16 +1889,16 @@
             </Grid>
         </ScrollViewer>
 
-        <Button Content="Change Settings"
+        <Button Content="确认修改以上设定"
                 Foreground="{DynamicResource TextColor1}"
-                FontWeight="Medium"
+                FontWeight="Bold"
                 FontSize="16"
                 Grid.Column="25"
                 HorizontalAlignment="Center"
-                Margin="0,15,0,0" Click="Button_Click">
+                Margin="0,10,0,0" Click="Button_Click">
             <Button.Style>
                 <Style TargetType="Button">
-                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                    <Setter Property="TextElement.FontFamily" Value="Microsoft YaHei UI"/>
                     <Setter Property="Background" Value="{DynamicResource Button}"/>
                     <Setter Property="Cursor" Value="Hand"/>
                     <Style.Triggers>
@@ -1910,7 +1910,7 @@
             </Button.Style>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <Border Width="142" Height="30"
+                    <Border Width="182" Height="30"
                             CornerRadius="4"
                             Background="{TemplateBinding Background}">
                         <ContentPresenter VerticalAlignment="Center"
