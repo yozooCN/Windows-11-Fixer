@@ -1,5 +1,11 @@
 # Windows 11 Fixer 中文汉化修改版<br> [![Latest Release](https://img.shields.io/github/v/release/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.1.0) [![Latest Release](https://img.shields.io/github/downloads/99natmar99/Windows-11-Fixer/total?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.1.0/Windows.11.Fixer.v2.1.0.Portable.zip) [![Latest Release](https://img.shields.io/github/license/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/blob/master/LICENSE)
 
+## 关于中文汉化修改版
+[原版请点击这个链接](https://github.com/99natmar99/Windows-11-Fixer)
+- 原版不能自由调节窗口大小，且窗口大小固定为1280x720，我电脑显示有限，把窗口大小改小了
+- 配色改为较为领先的iPhone 13 Pro新配色苍岭绿
+
+![screenshot](https://github.com/yozooCN/Windows-11-Fixer/blob/master/Images/FixWin-Light-zh.png)
 ![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/FixWin-Light.png)
 
 ## 关于
